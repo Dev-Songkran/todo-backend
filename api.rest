@@ -1,0 +1,32 @@
+@endpoit = http://localhost:3301/api/v1
+
+### all todo
+GET {{endpoit}}/todo
+Content-Type: application/json
+
+### create todo
+POST {{endpoit}}/todo
+Content-Type: application/json
+
+{
+  "description": "TypeOrmCoreModule dependencies initialized"
+}
+
+### update todo
+PATCH {{endpoit}}/todo/1
+Content-Type: application/json
+
+{
+  "status":"success"
+}
+
+
+### Delete single todo
+DELETE  {{endpoit}}/todo/1
+Content-Type: application/json
+
+### clear completed
+DELETE  {{endpoit}}/todo/clear?all=false
+
+### clear all
+DELETE  {{endpoit}}/todo/clear?all=true
