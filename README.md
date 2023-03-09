@@ -17,6 +17,7 @@ pnpm i
 ```
 
 config .env
+<small style="color:red">copy .env.example และทำการเปลี่ยนชื่อเป็น .env</small>
 
 ```bash
 DB_HOST={{HOST}}
