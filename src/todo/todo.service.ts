@@ -38,7 +38,7 @@ export class TodoService {
   }
 
   remove(id: number) {
-    return this.todoRepo.softDelete(id)
+    return this.todoRepo.delete(id)
   }
 
   async clear(all: boolean = false) {
